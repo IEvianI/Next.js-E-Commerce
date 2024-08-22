@@ -23,7 +23,9 @@ const ListPage = () => {
             </Suspense>
             {/* PRODUCTS */}
             <h1 className="mt-12 text-xl font-semibold">Shoes For You!</h1>
-            <ProductList />
+            <Suspense fallback={"loading"}>
+        <ProductList categoryId={process.env.FEATURED_PRODUCTS_CATEGORY_ID!} limit={4} />
+        </Suspense>
         </div>
     )
 }
