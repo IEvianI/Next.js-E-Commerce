@@ -1,6 +1,7 @@
 import Filter from "@/components/Filter"
 import ProductList from "@/components/ProductList"
 import Image from "next/image"
+import { Suspense } from "react"
 
 const ListPage = () => {
     return (
@@ -17,7 +18,9 @@ const ListPage = () => {
                 </div>
             </div>
             {/* FILTER */}
+            <Suspense fallback={<div>Loading...</div>}>
             <Filter />
+            </Suspense>
             {/* PRODUCTS */}
             <h1 className="mt-12 text-xl font-semibold">Shoes For You!</h1>
             <ProductList />
