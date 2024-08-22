@@ -34,15 +34,15 @@ const SinglePage = async ({params} : {params:{slug:string}}) => {
                 <div className="h-[2px] bg-gray-100" />
                 <div className="flex items-center gap-4">
                     {product.price?.price === product}
-                    <h3 className="text-xl text-gray-500 line-through">${product.price?.price}</h3>
-                    <h2 className="font-medium text-2xl">${product.price?.discountedPrice}</h2>
+                    <h3 className="text-xl text-gray-500 line-through">{product.price?.price}€</h3>
+                    <h2 className="font-medium text-2xl">{product.price?.discountedPrice}€</h2>
                 </div>
                 <div className="h-[2px] bg-gray-100" />
                 <CustomizeProducts />
                 <Add />
                 <div className="h-[2px] bg-gray-100" />
                 <div className="text-sm">
-                    <h4 className="font-medium mb-4">Title</h4>
+                    <h4 className="font-medium mb-4">Titre</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Est ducimus, cum id inventore quae animi ipsam recusandae, quod at obcaecati ab sed unde, consectetur iste error!
@@ -50,7 +50,7 @@ const SinglePage = async ({params} : {params:{slug:string}}) => {
                     </p>
                 </div>
                 <div className="text-sm">
-                    <h4 className="font-medium mb-4">Title</h4>
+                    <h4 className="font-medium mb-4">Titre</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Est ducimus, cum id inventore quae animi ipsam recusandae, quod at obcaecati ab sed unde, consectetur iste error!
@@ -58,7 +58,7 @@ const SinglePage = async ({params} : {params:{slug:string}}) => {
                     </p>
                 </div>
                 <div className="text-sm">
-                    <h4 className="font-medium mb-4">Title</h4>
+                    <h4 className="font-medium mb-4">Titre</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Est ducimus, cum id inventore quae animi ipsam recusandae, quod at obcaecati ab sed unde, consectetur iste error!
