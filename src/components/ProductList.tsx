@@ -8,15 +8,21 @@ const PRODUCT_PER_PAGE = 20;
 
 const ProductList = async ({
     categoryId,
-    limit, 
+    limit,
+    searchParams,
 } : { 
     categoryId:string;
-    limit?:number; 
+    limit?:number;
+    searchParams?:any;
 }) => {
 
      const wixClient = await wixClientServer();
 
-  const res = await wixClient.products.queryProducts().eq("collectionIds", categoryId).limit(limit || PRODUCT_PER_PAGE).find();
+  const res = await wixClient.products
+  .queryProducts()
+  .eq("collectionIds", categoryId)
+  .limit(limit || PRODUCT_PER_PAGE)
+  .find();
 
   console.log(res.items[0].price)
 
