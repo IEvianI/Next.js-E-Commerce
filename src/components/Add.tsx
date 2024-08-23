@@ -36,10 +36,14 @@ const Add = ({
                     {quantity}
                     <button className="cursor-pointer text-xl" onClick={() => handleQuantity("i")}>+</button>
                 </div>
-                <div className="text-xs">
+                {stockNumber < 1 ? (
+                    <div className="text-xs">Produit en rupture de stock</div>
+                    ) : (
+                    <div className="text-xs">
                     Seulement <span className="text-orange-500">{stockNumber} articles</span> <br />restants!
                     A ne pas manquer
                     </div>
+                )}
                     </div>
             <button
             className="w-42 text-sm rounded-3xl ring-1 ring-lama text-lama py-2 px-4 hover:bg-lama hover:text-white disabled:cursor-not-allowed disabled:bg-pink-200 disabled:text-white disabled:ring-none">
