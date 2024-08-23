@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
                 {/* RIGHT */}
                 <div className="w-full md:w-1/2 lg:w-1/4 flex flex-col gap-8">
-                <h1 className="font-medium text-lg">S'ABONNER</h1>
+                <h1 className="font-medium text-lg">S&apos;ABONNER</h1>
                 <p>Soyez les premiers à recevoir les dernières nouvelles sur les tendances, les promotions et bien plus encore !</p>
                 <div className="flex">
                     <input type="text" placeholder="Adresse email" className="p-4 w-3/4" />
