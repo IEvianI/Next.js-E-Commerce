@@ -81,10 +81,10 @@ const LoginPage = () => {
                       });
                       break;
                       case MODE.RESET_PASSWORD:
-                    response = await wixClient.auth.sendPasswordResetEmail({
+                    response = await wixClient.auth.sendPasswordResetEmail(
                         email,
                         pathName
-                      });
+                      );
                       setMessage("Password reset email sent. Please check your inbox.")
                       break;
                       case MODE.EMAIL_VERIFICATION:
